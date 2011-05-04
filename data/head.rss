@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- name="generator" content="blosxom/$version" -->
+<!DOCTYPE rss PUBLIC "-//Netscape Communications//DTD RSS 0.91//EN" "http://my.netscape.com/publish/formats/rss-0.91.dtd">
+
+<rss version="0.91">
+  <channel>
+    <title>$blog_title $path_info_da $path_info_mo $path_info_yr</title>
+    <link>$url</link>
+    <description>$blog_description</description>
+    <language>$blog_language</language>
