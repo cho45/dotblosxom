@@ -1,9 +1,9 @@
 #!plackup
 use strict;
 use warnings;
-use Plack::App::CGIBin;
-use Plack::Builder;
 use Path::Class;
+use Plack::Builder;
+use Plack::App::WrapCGI;
 
 my $root = file(__FILE__)->parent->absolute;
 
