@@ -365,6 +365,7 @@ sub generate {
       $curdate ne $date and $curdate = $date and $output .= $date;
       
       use vars qw/ $title $body $raw /;
+      my $fh = FileHandle->new;
       if (-f "$path_file" && $fh->open("< $path_file")) {
         chomp($title = <$fh>);
         chomp($body = join '', <$fh>);
