@@ -7,7 +7,7 @@ use Plack::App::WrapCGI;
 
 my $root = file(__FILE__)->parent->absolute;
 
-my $app = Plack::App::WrapCGI->new(script => $root->file("blosxom.cgi"))->to_app;
+my $app = Plack::App::WrapCGI->new(script => $root->file("blosxom.cgi"), execute => 1)->to_app;
 
 builder {
 	enable "Plack::Middleware::Static",
