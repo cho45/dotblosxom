@@ -264,6 +264,7 @@ else {
 
   $header = {-type=>$content_type};
 
+  $output = '';
   print generate('dynamic', $path_info, "$path_info_yr/$path_info_mo_num/$path_info_da", $flavour, $content_type);
 }
 
